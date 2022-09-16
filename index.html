@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <script>
+        function showMagic() {
+            let body = document.getElementsByTagName("body")[0]; 
+            body.innerHTML = "<img src='giphy.gif'> <h1>Wow! Magic</h1>";
+        }
+
+        function changeColor() {
+            let magic = document.getElementById("h1Sample");
+            magic.style.color="red";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="h1Sample">Want to see a magic?</h1>
+    <h2>Click her!</h2>
+    <button onclick="showMagic()">I am her!</button>
+    <button onclick="changeColor()">Change Color</button>
+</body>
+</html>
